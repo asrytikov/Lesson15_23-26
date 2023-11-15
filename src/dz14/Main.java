@@ -1,3 +1,5 @@
+package dz14;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,8 +9,9 @@ public class Main {
         int a;
         System.out.println("Copy png file");
         try{
-            FileOutputStream fileOutputStream = new FileOutputStream("2.png");
             FileInputStream fileInputStream = new FileInputStream("1.png");
+            FileOutputStream fileOutputStream = new FileOutputStream("2.png");
+
             a = fileInputStream.read();
             while (a!=-1){
                 fileOutputStream.write(a);
